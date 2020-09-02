@@ -1,0 +1,239 @@
+    <html>
+    <head>
+	
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">        
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script src= 
+"https://code.jquery.com/jquery-1.12.4.min.js"> 
+    </script>
+	
+	 <script>
+         <!--
+            function checkpoint() {
+                              
+if(data % 1 === 0){
+   // yes it's an integer.
+}
+            }
+         //-->
+      </script>
+
+
+<style>
+#pageloader
+{
+  background: rgba( 255, 255, 255, 0.8 );
+  display: none;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+
+#pageloader img
+{
+  left: 50%;
+  margin-left: -32px;
+  margin-top: -32px;
+  position: absolute;
+  top: 50%;
+}
+</style>
+    
+     <meta Http-Equiv="Cache-Control" Content="no-cache">
+     <meta Http-Equiv="Pragma" Content="no-cache">
+     <meta Http-Equiv="Expires" Content="0">
+     <meta Http-Equiv="Pragma-directive: no-cache">
+     <meta Http-Equiv="Cache-directive: no-cache"> 
+    </head>
+	
+<body>
+   <div id="loading" style='width: 100%; height: 100%; top: 0px; left: 0px; position: fixed; display: block; opacity: 0.7; background-color: #fff; z-index: 99; text-align: center;'>
+           <img id="loading-image" src="static/assets/img/ajax_loader.gif" alt="Loading..."  style='position: absolute;top: 100px; left: 240px; z-index: 100;'  />
+        </div>
+		
+	<div id="pageloader"   style=' background: rgba( 255, 255, 255, 0.8 );
+  display: none;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;' >
+   <img  style='position: absolute;top: 80px; left: 165px; z-index: 100; width: 80%; height: 100%'    src="static/assets/img/ajax_loader.gif" alt="processing..." />
+</div>	
+    <script> 
+        $(document).ready(function() { 
+            $('input[type="file"]').change(function(e) { 
+                var geekss = e.target.files[0].name; 
+                $("h4").text(geekss + ' is the selected file.'); 
+  
+            }); 
+        }); 
+		
+		
+		
+   
+    </script> 
+	
+	<script>
+
+
+	</script>
+
+<script language="JavaScript">
+
+   $(document).ready(function() {
+  $('#number').bind("cut copy paste drag drop", function(e) {
+      e.preventDefault();
+  });     
+});
+function isNumberKey(evt) {
+    var charCode = (evt.which) ? evt.which : evt.keyCode;
+    if (charCode > 31 && (charCode < 48 || charCode > 57))
+        return false;
+		
+    return true;
+}
+		
+		function allownums(){
+		  var filename=(document.forms["myForm"]["image"].value)
+		  var parts = filename.split('.');
+          var ext= parts[parts.length - 1];
+		  var decision=false
+		  var lower=ext.toLowerCase()
+		 
+		  
+		  
+  if(lower=='jpg' || lower=='jpeg' || lower=='png' ){
+       decision=true;
+	 var x = document.forms["myForm"]["text"].value;
+   var num = parseInt(x,10);
+   if(num <2 || num>30 || isNaN(num) ){
+      alert('Please enter a valid cluster number within specified range')  
+      return false; }  
+	   
+  }
+    else {
+  alert('Invalid file extension, enter jpg or png format')
+     return false;
+}
+		$(document).ready(function(){
+  $("#myForm").on("submit", function(){
+   
+    $("#pageloader").fadeIn();
+  });//submit
+});//document ready
+		  
+}
+</script>
+<sc>
+
+    <div class="bg" style='background-image: url(static/assets/img/kmeans.jpg); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; -webkit-background-size: cover; -moz-background-size: cover; min-height: 720px;position: relative;height: 100%;'>
+	
+   <div class="container">
+	<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+  <img class= 'rounded mx-auto d-block ' src="static/assets/img/py.png" style="width:25px;height:25px;" alt="logo">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+       <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+	  <li class="nav-item active">
+        <a class="nav-link" href="/about_me">About Me <span class="sr-only">(current)</span></a>
+      </li>
+	    <li class="nav-item active">
+	      
+         </li>
+	    <li class="nav-item active">
+	   <a class="navbar-brand" href="https://www.linkedin.com/in/akshay-purohit-97a976a5/"><img class= 'rounded mx-auto d-block ' src="static/assets/img/in2.png" style="width:27px;height:27px;" alt="logo"></a>
+         </li>  
+		   <li class="nav-item active">
+	   <a class="navbar-brand" href="https://www.instagram.com/akshaypurohit177/"><img class= 'rounded mx-auto d-block ' src="static/assets/img/insta.jpg" style="width:27px;height:27px;" alt="logo"></a>
+         </li>
+	<li class="nav-item active">
+        <a class="nav-link" href="#">Akshaypurohit177@gmail.com | Contact/Whatsapp : 8289071108<span class="sr-only">(current)</span></a>
+      </li>
+	  
+	   </div>
+</nav>
+
+        <div class="row">
+          <div class="col">
+		    <td cellpadding="20px"  class="bg-gradient-dark text-white"><Br></td> 
+           
+			<table>
+            <tr>
+			<td><img src="static/assets/img/k_big_final.gif" style="width:120px;height:120px;" alt="logo"></td>
+			<td ><h1 class="bg-gradient-dark  text-white" ><strong>K - Means Clustering In Real Life!</strong></h1></td>
+		
+            </tr>
+			</table>
+			<hr>
+      
+            <form id='myForm' name='myForm' action="{{ url_for('upload_image') }}" method="POST" enctype="multipart/form-data"  onsubmit="return allownums(this.value)">
+      
+              <div class="form-group">
+                <label  class="bg-gradient-dark text-white"><h6><strong>Select an Image to upload</strong></h6></label>
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" name="image" id="image" value='submit'>
+				            
+                  <label class="custom-file-label" for="image"></label>
+			      
+                  <h4 class="p-3 mb-2 bg-gradient-dark text-white"><!-- Slected file will get here --></h4> 
+                </div>
+
+
+
+			  <br>
+			  <table >
+			 
+			   <tr>
+			   <br>
+			   <br>
+			   
+			   <td align="Left" class="bg-gradient-dark text-white"><h5><strong>Enter Number of Clusters for Image Representation</strong></label></h5></td>
+			      </tr>
+				  <tr>
+			   <td align="Left"><label class="bg-gradient-dark text-white"><strong>for eg. 2 clusters will represent image in just 2 colors</strong></label></td>
+			      </tr>
+                   <tr><td cellpadding="20px"><input name="text"  onkeypress="return isNumberKey(event)"  onblur='allownums(this.value)'/></td></tr>
+				   <tr><br></tr>
+				  
+                </div>
+              </div>
+			  
+			  <table>
+              <br>
+              <button type="submit" class="btn btn-success btn-lg" class="btn btn-secondary btn-lg"  value="submit"><strong>Upload</strong></button>
+
+            </form>
+					
+            
+          </div>
+		  <table>
+		  <tr><br></tr>
+		  <tr><br></tr>
+		   <tr align="Left"><td><label class="bg-gradient-dark text-white"><small>Note:- Text box accepts only integer values between 2 and 30</small></label></td></tr>
+		    <tr align="Left"><td><label class="bg-gradient-dark text-white" size='10px;';><small>**    only .png and .jpg format for images Allowed</small></label></td></tr>
+			
+		  <table>
+		 </div>
+         
+  
+	  
+<script>	  
+  $(window).load(function() {
+    $('#loading').hide();
+});
+</script>	
+</body> 
+</html>
