@@ -9,7 +9,7 @@ joblib==0.15.1
 kiwisolver==1.2.0	
 matplotlib==3.2.1	
 numpy==1.18.4	
-opencv-python==4.2.0.34	
+opencv-python-headless==4.2.0.32	
 opt-einsum==3.2.1
 pip==20.1.1	
 requests==2.23.0	
